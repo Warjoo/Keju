@@ -19,6 +19,10 @@ def login():
 def home(A):
 	return nmpl.hom(A)
 
-@app.route('/peneliti/<A>')
+@app.route('/peneliti/<B>')
 def home(B):
 	return nmpl.hom(B)
+
+@app.route('/peneliti/<C>')
+def home(C):
+	return nmpl.hom(C)
