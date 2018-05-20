@@ -16,17 +16,17 @@ def login():
 	return request.form['anu']
 
 @app.route('/peneliti/<A>')
-def home(A):
+def home(E):
 	return nmpl.hom(A)
 
 @app.route('/peneliti/<B>')
-def home(B):
+def home(F):
 	return nmpl.hom(B)
 
 @app.route('/peneliti/<C>')
-def home(C):
+def home(G):
 	return nmpl.hom(C)
 
 @app.route('/peneliti/<D>')
-def home(D):
+def home(H):
 	return nmpl.hom(D)
