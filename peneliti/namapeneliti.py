@@ -7,3 +7,5 @@ def hom(B):
 	return B+"John"
 def hom(C):
 	return C+"Alton"
+def hom(D):
+	return D+"Juliffer"

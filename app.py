@@ -26,3 +26,7 @@ def home(B):
 @app.route('/peneliti/<C>')
 def home(C):
 	return nmpl.hom(C)
+
+@app.route('/peneliti/<D>')
+def home(D):
+	return nmpl.hom(D)
