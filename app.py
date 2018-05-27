@@ -1,5 +1,7 @@
-from flask import Flask,request
+from flask import Flask,request,Response,jsonify
 from peneliti import namapeneliti as nmpl
+import scholarly.json
+
 app = Flask(__name__)
 
 @app.route('/<gurih>')
@@ -15,18 +17,18 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/peneliti/<A>')
-def home(I):
-	return nmpl.hom(A)
-
-@app.route('/peneliti/<B>')
-def home(J):
-	return nmpl.hom(B)
-
-@app.route('/peneliti/<C>')
-def home(K):
-	return nmpl.hom(C)
-
-@app.route('/peneliti/<D>')
-def home(L):
-	return nmpl.hom(D)
+@app.route('/peneliti/<Chris>', methods=[POST])
+def Coba(Chris)
+    return str(nmpl.C(Chris))
+@app.route('/peneliti/<Juliffer>', methods=[POST])
+def Coba1(Juliffer)
+    return str(nmpl.D(Juliffer))
+@app.route('/peneliti/<Roza>', methods=[POST])
+def Coba2(Roza)
+    return str(nmpl.E(Roza))
+@app.route('/peneliti/<Manish Singh>', methods=[POST])
+def Coba3(Manish Singh)
+    return str(nmpl.A(Manish Singh))
+@app.route('/peneliti/<Oussama Khatib>', methods=[POST])
+def Coba4(Oussama Khatib)
+    return str(nmpl.B(Oussama Khatib))
