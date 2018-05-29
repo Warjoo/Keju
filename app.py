@@ -17,8 +17,7 @@ def show_post(post_id):
 #def login():
 #	return request.form['anu']
 
-@app.route('/peneliti/<Rutgers, 3349>',methods=['POST'])
-def cobaaja(Rutgers, 3349):
-		search_query = scholarly.search_author('Rutgers, 3349')
-		return str(next(search_query))
+@app.route('/peneliti/<Rutgers>',methods=['POST'])
+def coba(Rutgers):
+		return str(ml.cobaaja('Rutgers'))
 
