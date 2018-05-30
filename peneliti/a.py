@@ -1,6 +1,6 @@
 # Define a function
 def world():
-    print("Hai, Whats up cui!")
+    print("Selamat menjalankan bulan suci Ramadhan!")
 
 # Define a variable
 shark = "warjo"
