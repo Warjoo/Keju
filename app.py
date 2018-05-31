@@ -22,15 +22,23 @@ def show_post(post_id):
 def login():
 	return request.form['anu']
 
-@app.route('/peneliti/<Rutgers>',methods=['POST'])
-def coba(Rutgers):
-		search_query = scholarly.search_author('Rutgers')
+@app.route('/peneliti/<nama>',methods=['POST'])
+def coba(nama):
+		search_query = scholarly.search_author('nama')
 		return str(next(search_query))
 
 @app.route('/aff')
 def bisa():
 	cursor = db.cursor()
 	sql = "SELECT * FROM searchpost"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	return str(results)
+
+@app.route('/affi')
+def bisaa():
+	cursor = db.cursor()
+	sql = "SELECT * FROM searchget"
 	cursor.execute(sql)
 	results = cursor.fetchall()
 	return str(results)
