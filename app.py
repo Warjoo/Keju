@@ -43,5 +43,13 @@ def bisaa():
 	results = cursor.fetchall()
 	return str(results)
 
+@app.route('/affijson')
+def bisaaa():
+	cursor = db.cursor()
+	sql = "SELECT * FROM searchpost WHERE citedby=3349"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	return jsonify(results)
+
 
 
