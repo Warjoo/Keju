@@ -44,7 +44,7 @@ def bisaa():
 	return str(results)
 
 @app.route('/affil')
-def bisaa():
+def bisaaa():
 	cursor = db.cursor()
 	sql = "SELECT * FROM searchpg"
 	cursor.execute(sql)
@@ -52,9 +52,17 @@ def bisaa():
 	return str(results)
 
 @app.route('/affijson')
-def bisaaa():
+def bisaaaa():
 	cursor = db.cursor()
 	sql = "SELECT * FROM searchpost WHERE citedby=3349"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	return jsonify(results)
+
+@app.route('/affijsonn')
+def bisaaaaa():
+	cursor = db.cursor()
+	sql = "SELECT * FROM searchget WHERE citedby=27493"
 	cursor.execute(sql)
 	results = cursor.fetchall()
 	return jsonify(results)
