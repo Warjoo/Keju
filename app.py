@@ -43,6 +43,14 @@ def bisaa():
 	results = cursor.fetchall()
 	return str(results)
 
+@app.route('/affil')
+def bisaa():
+	cursor = db.cursor()
+	sql = "SELECT * FROM searchpg"
+	cursor.execute(sql)
+	results = cursor.fetchall()
+	return str(results)
+
 @app.route('/affijson')
 def bisaaa():
 	cursor = db.cursor()
