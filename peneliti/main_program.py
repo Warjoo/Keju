@@ -10,3 +10,6 @@ print(hello.shark)
 
 # Call class
 jesse = hello.Octopus("Tasya", "tomato")
+
+# import sys
+sys.path.append('/usr/roza/')
