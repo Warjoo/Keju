@@ -9,4 +9,4 @@ a.world()
 print(hello.shark)
 
 # Call class
-jesse = hello.Octopus("Roza", "pink")
+jesse = hello.Octopus("Tasya", "tomato")
